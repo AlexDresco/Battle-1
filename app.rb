@@ -25,12 +25,11 @@ class Battle < Sinatra::Application
   end
 
   get '/attack' do
-    @player_1 = $name_one.name
-    @player_2 = $name_two.name
+    @player_1 = $name_1
+    @player_2 = $name_2
+    Game.new.attack(@player_2)
     erb(:attack)
   end
 
-
-  # start the server if ruby file executed directly
   run! if app_file == $0
 end
