@@ -2,6 +2,8 @@
 <h1> The next battle will be between <%= @player_1 %> and <%= @player_2 %> </h1>
 <h2> <%= @player_2 %>: 100 HP </h2>
 <div>
-<a href="/attack" name='attack'> Your turn to attack, <%= @player_1 %> </a>
+<form action="/attack">
+  <input type="submit" value="Attack!">
+</form>
 
 </div>

@@ -7,5 +7,6 @@ gem 'capybara'
 gem 'rspec'
 # gem 'shotgun'
 gem 'sinatra'
+gem 'rack'
 
 # gem "rails"
